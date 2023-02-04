@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Page</title>
+    <link rel="icon" type="image/x-icon" href="cafe.png">
+    <!-- <meta http-equiv="refresh" content="2"> -->
+    <link rel='stylesheet' type='text/css' media='screen' href='signup.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='logo.css'>
+</head>
+<body>
+    <div class="bg-image"></div>
+    <div class="bg-text">
+        <div class="login">
+            <div class="text-logo">
+                <h1>Foodie Hoodie
+                    <div class="roller">
+                    <span id="rolltext">tasty<br/>
+                    spicy<br/>
+                    cripsy<br/>
+                    <span id="spare-time">#thoughtfood</span><br/>
+                    </div>
+                </h1>
+            </div>
+            <br>
+            <h3>CREATE NEW ACCOUNT</h3>
+            <form action="insert.php" method="POST">
+                <table>
+                    <tr>
+                        <td><label for="create_name" >USER NAME:</label></td>
+                        <td><input placeholder="Enter your Name..." type="text" name="usr_name" required id="create_name" ></td>
+                        <td class="red">*</td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td><label for="create_passwd">USER PASSWORD:</label></td>
+                        <td><input placeholder="Enter your Password..." type="password" name="usr_passwd" required id="create_passwd"></td>
+                        <td class="red">*</td>
+                    </tr>
+                    <tr>
+                        <td><label for="birthday">ENTER YOUR BIRTHDAY:</label></td>
+                        <td><input placeholder="Enter Date..." type="date" name="usr_birthday" required id="birthday"></td>
+                        <td class="red">*</td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">ENTER YOUR EMAIL:</label></td>
+                        <td><input placeholder="Enter Email..." type="email" name="usr_email" required id="email"></td>
+                        <td class="red">*</td>
+                    </tr>
+                </table>
+        </div>
+        <br>
+        <button data-text="Create Account" class="c-a" name="submit1" >
+            <span class="ca-actual-text">&nbsp;Login&nbsp;</span>
+            <span class="ca-hover-text" aria-hidden="true">&nbsp;Login&nbsp;</span>
+        </button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,174 @@
+body, html {
+    height: 100%;
+  }
+  
+* {
+    box-sizing: border-box;
+  }
+.bg-image {
+    background-image: url("log.png");
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+.bg-text {
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.4);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 60%;
+    padding: 7%;
+    text-align: center;
+    font-family:sans-serif;
+    border-radius: 3%;
+    border-style: groove;
+  }
+table{
+    letter-spacing: 0.1cm;
+    font-weight:400;
+  }
+  
+.red{
+    color: red;
+  }
+table{
+    margin: auto;
+    font-family:'Times New Roman', Times, serif;
+    color: black;
+  }
+#lb_fp{
+    color: #1D3557;
+  }
+#user_name{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #ffffff;
+    max-width: 190px;
+    height: 40px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+  }
+#user_name:focus{
+    color: rgb(0,140,255);
+    background-color: #ffffff;
+    outline-color: rgb(0,140,255);
+    box-shadow: -3px -3px 15px rgb(0,140,255);
+    transition: .1s;
+    transition-property: box-shadow;
+  }
+#passwd{
+    font-display: swap;
+    font-size: medium;
+    background-color: #ffffff;
+    max-width: 190px;
+    height: 40px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+  }
+#passwd:focus{
+    color: rgb(0,140,255);
+    background-color: #ffffff;
+    outline-color: rgb(0,140,255);
+    box-shadow: -3px -3px 15px rgb(0,140,255);
+    transition: .1s;
+    transition-property: box-shadow;
+  }
+  
+.login{
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+  }
+.login{
+    --border-right: 6px;
+    --text-stroke-color: rgb(5, 5, 5);
+    --animation-color:#1D3557;
+    --fs-size: 20px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+.lo-actual-text{
+    font-size: 100%;
+    font-family: 'Times New Roman', Times, serif;
+  }
+.lo-hover-text {
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+.login:hover .lo-hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+.signup{
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+  }
+.signup{
+    --border-right: 6px;
+    --text-stroke-color: rgb(5, 5, 5);
+    --animation-color: #1D3557;
+    --fs-size: 20px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+.si-actual-tex{
+    font-size: 100%;
+    font-family: 'Times New Roman', Times, serif;
+  }
+.si-hover-text {
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+.signup:hover .si-hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+  

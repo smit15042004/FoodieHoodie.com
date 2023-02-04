@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Billing Website</title>
+    <link rel="icon" type="image/x-icon" href="cafe.png">
+    <!-- <meta http-equiv="refresh" content="5"> -->
+    <meta name='viewport' content="width=device-width,height=device-height,initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='login.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='logo.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class="bg-image"></div>
+        <div class="bg-text">
+            <div class="contain"></div>
+                <div class="login">
+                    <div class="text-logo">
+                        <h1>Foodie Hoodie
+                            <div class="roller">
+                            <span id="rolltext">tasty<br/>
+                            spicy<br/>
+                            cripsy<br/>
+                            <span id="spare-time">#thoughtfood</span><br/>
+                            </div>
+                        </h1>
+                    </div>
+                    <br>
+                    <form action="login.php" method="POST">
+                        <table>
+                            <tr>
+                                <td><label for="user_name">USER EMAIL:</label></td>
+                            </tr>
+                            
+                            <tr>
+                                <td><input placeholder="Enter your Email..." type="email" name="email" required id="user_name"> <br></td>
+                                
+                            </tr>
+                            
+                            <tr>
+                                <td><label for="passwd">PASSWORD:</label></td>
+                            </tr>
+                            
+                            <tr>
+                                <td><input placeholder="Enter your Password..." type="password" name="password" required id="passwd"></td>
+                            </tr>
+                            
+                            <tr>
+                                <td><a href = "fgpass.html" target="_blank" 
+                                    style="font-size: small; 
+                                        font-family: 'Times New Roman', Times, serif;
+                                        text-decoration-color: rgb(0,140,255);
+                                        color: black;">
+                                    Forget Password?
+                                </a></td>
+                            </tr>
+                            <br>
+                        </table>
+                        <button type="submit" data-text="LogIn" class="login" name="loginbutton" >
+                            <span class="lo-actual-text">&nbsp;Login&nbsp;</span>
+                            <span class="lo-hover-text" aria-hidden="true">&nbsp;Login&nbsp;</span>
+                        </button> 
+                        <br>
+                        <br>
+                        <button data-text="SignUp" class="signup" onclick="window.location.href = 'signup.html' ">
+                            <span class="si-actual-text">&nbsp;SignUp&nbsp;</span>
+                            <span class="si-hover-text" aria-hidden="true">&nbsp;SignUp&nbsp;</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+</body>
+
+
+
+</html>

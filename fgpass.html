@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forget Password</title>
+    <link rel="icon" type="image/x-icon" href="cafe.png">
+    <link rel='stylesheet' type='text/css' media='screen' href='fgpass.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='logo.css'>
+</head>
+<body>
+    <div class="bg-image"></div>
+        <div class="bg-text">
+            <div class="contain"></div>
+                <div class="login">
+                    <div class="text-logo">
+                        <h1>Foodie Hoodie
+                            <div class="roller">
+                            <span id="rolltext">tasty<br/>
+                            spicy<br/>
+                            cripsy<br/>
+                            <span id="spare-time">#thoughtfood</span><br/>
+                            </div>
+                        </h1>
+                    </div>
+                    <br>
+                    <form action="fgpass.php" method="POST">
+                        <table>
+                            <tr><label id="lb_fp">Recover your Password</label></tr>
+                            <tr>
+                                <td><label for="user_name">ENTER YOUR EMAIL ID:</label></td>
+                                <td><input placeholder="Enter your Email ID..." type="text" name="email" required id="user_name"></td>
+                                <td class="red">*</td>
+                            </tr>
+                            <br>
+                            <tr>
+                                <td>
+                                <div class="container">
+                                    <button id="btn">
+                                        <p id="btnText">Send OTP</p>
+                                        <div class="check-box">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                                                <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </div>
+                                </td>
+                                <script type="text/javascript">
+                                    const btn = document.querySelector("#btn");
+                                    const btnText = document.querySelector("#btnText");
+                            
+                                    btn.onclick = () => {
+                                        btnText.innerHTML = "Sent...";
+                                        btn.classList.add("active");
+                                    };
+                                </script>
+                            </tr>
+                            <tr>
+                                <td><label for="user_code">VERIFICATION CODE:</label></td>
+                                <td><input placeholder="Enter the 6 digit code..." type="text" name="email" required id="user_name"></td>
+                                <td class="red">*</td>
+                            </tr>
+                            <br>
+                            <tr>
+                                <td><label for="passwd">PASSWORD:</label></td>
+                                <td><input placeholder="Enter your Password..." type="password" name="password" required id="passwd"></td>
+                                <td class="red">*</td>
+                            </tr>
+                            <br>
+                        </table>
+                        <button type="submit" data-text="LogIn" class="login" name="loginbutton" >
+                            <span class="lo-actual-text">&nbsp;Login&nbsp;</span>
+                            <span class="lo-hover-text" aria-hidden="true">&nbsp;Login&nbsp;</span>
+                        </button> 
+                    </form>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+</body>
+</html>
